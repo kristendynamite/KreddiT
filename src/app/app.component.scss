@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  background: #cee3f8;
+  .logo {
+    display: flex;
+    align-items: flex-end;
+    h1 {
+      margin: 0 auto;
+    }
+    img {
+      height: 65px;
+    }
+  }
+  nav {
+    display: flex;
+    align-items: flex-end;
+    ul {
+      list-style-type: none;
+      display: flex;
+      li {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+#main {
+  display: flex;
+  justify-content: flex-end;
+  #posts {
+    width: calc(100% - 300px);
+  }
+  #sidebar {
+    width: 300px;
+  }
+}
+
+#post-form {
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,6 +1,52 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
-</div>
+
+<header>
+  <div class="hero">
+    <div class="logo">
+      <img class="logoImg" src="KreddiTIcon.png" alt="" />
+      <h1>KreddiT</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a routerLink="animals">Animals</a></li>
+        <li><a routerLink="funny">Funny</a></li>
+        <li><a routerLink="makeup">Makeup</a></li>
+        <li><a routerLink="movies">Movies</a></li>
+        <li><a routerLink="music">Music</a></li>
+        <li><a routerLink="scary">Scary</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section id="main">
+  <div id="posts">
+    <router-outlet></router-outlet>
+  </div>
+  <div id="sidebar">
+    <form id="post-form">
+      <h2>Post something!</h2>
+      <div>
+        <label for="">Title:</label>
+        <input type="text">
+      </div>
+      <div>
+        <label>Category:</label>
+        <select class="" name="">
+          <option>Animals</option>
+          <option>Funny</option>
+          <option>Makeup</option>
+          <option>Movies</option>
+          <option>Music</option>
+          <option>Scary</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Image:</label>
+        <input type="url">
+      </div>
+      <div>
+        <label for="">Text:</label>
+        <input type="textarea">
+      </div>
+      <button type="submit" name="button">Submit!</button>
+    </form>
+  </div>
