@@ -1,16 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { Post } from './post.model';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Post } from '../post.model';
 
 @Component({
   selector: 'post-list',
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.scss']
 })
-export class PostListComponent implements OnInit {
+export class PostListComponent {
 
-  constructor() { }
+  @Input() childPostList: Post[];
+  @Output() clickSender = new EventEmitter();
 
-  ngOnInit() {
-  }
+ //  editButtonClicked(postToEdit: Post) {
+ //   this.clickSender.emit(postToEdit);
+ // }
 
 }

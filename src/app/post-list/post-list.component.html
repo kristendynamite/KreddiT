@@ -1,9 +1,11 @@
-<div class="individual-post">
+<div class="individual-post" *ngFor="let currentPost of childPostList">
   <div class="post-image">
-    <img src="{{image}}" alt="" />
+    <img src={{currentPost.image}} alt="" />
   </div>
   <div class="post-text">
-    <h2>{{title}}</h2>
-    <p>{{category}}</p>
+    <h2>{{currentPost.title}}</h2>
+    <p>Category: {{currentPost.category}}</p>
+    <p><a href="#">[+]</a>
+    </p>
   </div>
 </div>

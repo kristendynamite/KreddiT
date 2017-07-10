@@ -19,7 +19,9 @@
 </header>
 <section id="main">
   <div id="posts">
-    <router-outlet></router-outlet>
+    <!-- <router-outlet></router-outlet> -->
+    <post-list [childPostList]="masterPostList"></post-list>
+
   </div>
   <div id="sidebar">
     <form id="post-form">

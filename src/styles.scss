@@ -16,3 +16,19 @@ select {
 label {
   display: block;
 }
+
+.individual-post {
+  height: 200px;
+  margin: 10px 0;
+  display: flex;
+}
+.post-image {
+  height: inherit;
+  width: 200px;
+  img {
+    max-width: 200px;
+    max-height: 200px
+
+
+  }
+}
