@@ -1,3 +1,11 @@
-<p>
-  makeup works!
-</p>
+<div class="individual-post" *ngFor="let currentMakeup of makeupPostList">
+  <div class="post-image">
+    <img src={{currentMakeup.image}} alt="" />
+  </div>
+  <div class="post-text">
+    <h2>{{currentMakeup.title}}</h2>
+    <p>Category: {{currentMakeup.category}}</p>
+    <p><a href="#">[+]</a>
+    </p>
+  </div>
+</div>

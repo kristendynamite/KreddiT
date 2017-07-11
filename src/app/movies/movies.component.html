@@ -1,3 +1,11 @@
-<p>
-  movies works!
-</p>
+<div class="individual-post" *ngFor="let currentMovies of moviesPostList">
+  <div class="post-image">
+    <img src={{currentMovies.image}} alt="" />
+  </div>
+  <div class="post-text">
+    <h2>{{currentMovies.title}}</h2>
+    <p>Category: {{currentMovies.category}}</p>
+    <p><a href="#">[+]</a>
+    </p>
+  </div>
+</div>

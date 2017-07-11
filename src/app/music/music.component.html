@@ -1,3 +1,11 @@
-<p>
-  music works!
-</p>
+<div class="individual-post" *ngFor="let currentMusic of musicPostList">
+  <div class="post-image">
+    <img src={{currentMusic.image}} alt="" />
+  </div>
+  <div class="post-text">
+    <h2>{{currentMusic.title}}</h2>
+    <p>Category: {{currentMusic.category}}</p>
+    <p><a href="#">[+]</a>
+    </p>
+  </div>
+</div>

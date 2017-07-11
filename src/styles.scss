@@ -32,3 +32,10 @@ label {
 
   }
 }
+
+#logoText {
+  text-decoration: none;
+  &:visited {
+    color: black;
+  }
+}

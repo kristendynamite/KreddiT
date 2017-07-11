@@ -1,3 +1,12 @@
-<p>
-  animals works!
-</p>
+
+<div class="individual-post" *ngFor="let currentAnimal of animalsPostList">
+  <div class="post-image">
+    <img src={{currentAnimal.image}} alt="" />
+  </div>
+  <div class="post-text">
+    <h2>{{currentAnimal.title}}</h2>
+    <p>Category: {{currentAnimal.category}}</p>
+    <p><a href="#">[+]</a>
+    </p>
+  </div>
+</div>

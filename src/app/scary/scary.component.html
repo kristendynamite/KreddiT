@@ -1,3 +1,11 @@
-<p>
-  scary works!
-</p>
+<div class="individual-post" *ngFor="let currentScary of scaryPostList">
+  <div class="post-image">
+    <img src={{currentScary.image}} alt="" />
+  </div>
+  <div class="post-text">
+    <h2>{{currentScary.title}}</h2>
+    <p>Category: {{currentScary.category}}</p>
+    <p><a href="#">[+]</a>
+    </p>
+  </div>
+</div>

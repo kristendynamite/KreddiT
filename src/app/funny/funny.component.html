@@ -1,3 +1,11 @@
-<p>
-  funny works!
-</p>
+<div class="individual-post" *ngFor="let currentFunny of funnyPostList">
+  <div class="post-image">
+    <img src={{currentFunny.image}} alt="" />
+  </div>
+  <div class="post-text">
+    <h2>{{currentFunny.title}}</h2>
+    <p>Category: {{currentFunny.category}}</p>
+    <p><a href="#">[+]</a>
+    </p>
+  </div>
+</div>
